@@ -13,7 +13,7 @@ enum ProcessState {
 }
 
 enum Constants {
-    static let cornerRadius:    CGFloat = 20
+    static let cornerRadius: CGFloat = 20
 }
 
 extension String {
