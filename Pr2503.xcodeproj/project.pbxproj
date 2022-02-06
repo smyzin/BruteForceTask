@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		264DFEDE260D07EF0035EA15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264DFEDD260D07EF0035EA15 /* AppDelegate.swift */; };
 		264DFEE0260D07EF0035EA15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264DFEDF260D07EF0035EA15 /* SceneDelegate.swift */; };
-		264DFEE2260D07EF0035EA15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264DFEE1260D07EF0035EA15 /* ViewController.swift */; };
+		264DFEE2260D07EF0035EA15 /* BruteForceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264DFEE1260D07EF0035EA15 /* BruteForceController.swift */; };
 		264DFEE5260D07EF0035EA15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 264DFEE3260D07EF0035EA15 /* Main.storyboard */; };
 		264DFEE7260D07F00035EA15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264DFEE6260D07F00035EA15 /* Assets.xcassets */; };
 		264DFEEA260D07F00035EA15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 264DFEE8260D07F00035EA15 /* LaunchScreen.storyboard */; };
+		8599DE8027A6FD4700A52080 /* BruteForceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8599DE7F27A6FD4700A52080 /* BruteForceModel.swift */; };
+		8599DE8227A6FD6600A52080 /* PasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8599DE8127A6FD6600A52080 /* PasswordController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		264DFEDA260D07EF0035EA15 /* Pr2503.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pr2503.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		264DFEDD260D07EF0035EA15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		264DFEDF260D07EF0035EA15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		264DFEE1260D07EF0035EA15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		264DFEE1260D07EF0035EA15 /* BruteForceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteForceController.swift; sourceTree = "<group>"; };
 		264DFEE4260D07EF0035EA15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		264DFEE6260D07F00035EA15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		264DFEE9260D07F00035EA15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		264DFEEB260D07F00035EA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8599DE7F27A6FD4700A52080 /* BruteForceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteForceModel.swift; sourceTree = "<group>"; };
+		8599DE8127A6FD6600A52080 /* PasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,73 @@
 		264DFEDC260D07EF0035EA15 /* Pr2503 */ = {
 			isa = PBXGroup;
 			children = (
-				264DFEDD260D07EF0035EA15 /* AppDelegate.swift */,
-				264DFEDF260D07EF0035EA15 /* SceneDelegate.swift */,
-				264DFEE1260D07EF0035EA15 /* ViewController.swift */,
+				8599DE7827A6FC5D00A52080 /* Resources */,
+				8599DE7927A6FC9100A52080 /* Sources */,
+			);
+			path = Pr2503;
+			sourceTree = "<group>";
+		};
+		8599DE7827A6FC5D00A52080 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				264DFEE3260D07EF0035EA15 /* Main.storyboard */,
-				264DFEE6260D07F00035EA15 /* Assets.xcassets */,
 				264DFEE8260D07F00035EA15 /* LaunchScreen.storyboard */,
 				264DFEEB260D07F00035EA15 /* Info.plist */,
 			);
-			path = Pr2503;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8599DE7927A6FC9100A52080 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8599DE7A27A6FCA100A52080 /* App */,
+				8599DE7B27A6FCBB00A52080 /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8599DE7A27A6FCA100A52080 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				264DFEDD260D07EF0035EA15 /* AppDelegate.swift */,
+				264DFEDF260D07EF0035EA15 /* SceneDelegate.swift */,
+				264DFEE6260D07F00035EA15 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8599DE7B27A6FCBB00A52080 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8599DE7D27A6FCD000A52080 /* Controller */,
+				8599DE7C27A6FCCA00A52080 /* Model */,
+				8599DE7E27A6FCD500A52080 /* View */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8599DE7C27A6FCCA00A52080 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8599DE7F27A6FD4700A52080 /* BruteForceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8599DE7D27A6FCD000A52080 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				264DFEE1260D07EF0035EA15 /* BruteForceController.swift */,
+				8599DE8127A6FD6600A52080 /* PasswordController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8599DE7E27A6FCD500A52080 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +199,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				264DFEE2260D07EF0035EA15 /* ViewController.swift in Sources */,
+				264DFEE2260D07EF0035EA15 /* BruteForceController.swift in Sources */,
 				264DFEDE260D07EF0035EA15 /* AppDelegate.swift in Sources */,
+				8599DE8027A6FD4700A52080 /* BruteForceModel.swift in Sources */,
+				8599DE8227A6FD6600A52080 /* PasswordController.swift in Sources */,
 				264DFEE0260D07EF0035EA15 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,8 +351,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CC9X6PH2C6;
-				INFOPLIST_FILE = Pr2503/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Pr2503/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mamba.Pr2503;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,8 +370,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CC9X6PH2C6;
-				INFOPLIST_FILE = Pr2503/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Pr2503/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mamba.Pr2503;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
